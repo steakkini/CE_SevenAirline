@@ -11,3 +11,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+SevenAirline/.settings/.jsdtscope
+SevenAirline/.settings/org.eclipse.jdt.core.prefs
+SevenAirline/.settings/org.eclipse.jst.ws.cxf.core.prefs
+SevenAirline/.settings/org.eclipse.wst.common.component
+SevenAirline/.settings/org.eclipse.wst.common.project.facet.core.xml
+SevenAirline/.settings/org.eclipse.wst.jsdt.ui.superType.container
+SevenAirline/.settings/org.eclipse.wst.jsdt.ui.superType.name
