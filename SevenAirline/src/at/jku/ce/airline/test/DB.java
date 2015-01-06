@@ -6,8 +6,6 @@ import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
 
-import sun.dc.pr.PathStroker;
-import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
 import at.jku.ce.airline.service.Airport;
 import at.jku.ce.airline.service.Flight;
 import at.jku.ce.airline.service.Time;
@@ -48,7 +46,7 @@ public class DB {
 			flight.setArrivalTime(timeA);
 			flight.setPlaneName(line[2]);
 			flight.setFlightId(line[1]);
-			flight.setStdFee(new BigDecimal(flight.getArrivalTime().getTimeOfDay()-flight.getDepartureTime().getTimeOfDay()));
+			flight.setStdFee(new BigDecimal((flight.getArrivalTime().getTimeOfDay()-flight.getDepartureTime().getTimeOfDay())*0.07));
 			flights.add(flight);
 		}
 		br.close();
