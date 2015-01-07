@@ -9,7 +9,12 @@ import java.util.List;
 import at.jku.ce.airline.service.Airport;
 import at.jku.ce.airline.service.Flight;
 import at.jku.ce.airline.service.Time;
+<<<<<<< HEAD
 public class DB { 
+=======
+
+public class DB {
+>>>>>>> branch 'master' of https://github.com/Slither8/CE_SevenAirline.git
 
 	private static List<Airport> airports;
 	private static List<Flight> flights;
