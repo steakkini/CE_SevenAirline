@@ -9,11 +9,16 @@ import java.util.List;
 import at.jku.ce.airline.service.Airport;
 import at.jku.ce.airline.service.Flight;
 import at.jku.ce.airline.service.Time;
-public class DB {
+public class DB { 
 
 	private static List<Airport> airports;
 	private static List<Flight> flights;
 	
+	
+	public static List<Flight> getFlights() {
+		return flights;
+	}
+
 	public DB(){
 		airports = createAirports();
 		try {
@@ -184,6 +189,7 @@ public class DB {
 		}
 		return result.toString();
 	}
+
 	
 	
 }
