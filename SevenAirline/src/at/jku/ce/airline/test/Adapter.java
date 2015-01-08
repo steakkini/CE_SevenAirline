@@ -2,6 +2,7 @@ package at.jku.ce.airline.test;
 
 import at.jku.ce.airline.service.Airline;
 import at.jku.ce.airline.service.Flight;
+import at.jku.ce.airline.test.DB;
 
 public class Adapter {
 	static Airline airline;
@@ -14,7 +15,7 @@ public class Adapter {
 	}
 	
 	private void setStats(){
-		for(Flight f : DB.getFlights()){
+		for(Flight f : DB.getInstance().getFlights()){
 			airline.getFlightPlan().add(f);
 		}
 	}

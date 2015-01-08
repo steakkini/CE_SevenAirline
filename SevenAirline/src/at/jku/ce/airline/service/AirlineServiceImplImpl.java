@@ -45,7 +45,7 @@ public class AirlineServiceImplImpl implements AirlineServiceImpl {
          
         try {
         	
-        	a = a.getInstance();
+        	a = Adapter.getInstance();
         	for(Flight f1 : a.getAirline().getFlightPlan()){
         		if(f1.getFlightId().equals(flightId)) return f1;
         	}

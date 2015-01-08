@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="CE_SevenAirline">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/SevenAirline/src"/>
+        <property name="context-root" value="CE_SevenAirline"/>
+        <property name="java-output-path" value="/CE_SevenAirline/bin"/>
+    </wb-module>
+</project-modules>

@@ -9,22 +9,19 @@ import java.util.List;
 import at.jku.ce.airline.service.Airport;
 import at.jku.ce.airline.service.Flight;
 import at.jku.ce.airline.service.Time;
-<<<<<<< HEAD
-public class DB { 
-=======
 
 public class DB {
->>>>>>> branch 'master' of https://github.com/Slither8/CE_SevenAirline.git
 
 	private static List<Airport> airports;
 	private static List<Flight> flights;
 	
+	private static DB instance = null;
 	
 	public static List<Flight> getFlights() {
 		return flights;
 	}
 
-	public DB(){
+	private DB(){
 		airports = createAirports();
 		try {
 			flights = createFlights();
@@ -33,9 +30,18 @@ public class DB {
 		}
 	}
 	
+	public static DB getInstance() {
+		
+		if (instance == null)
+			instance = new DB();
+		
+		return instance;
+		
+	}
+	
 	private List<Flight> createFlights() throws Exception {
 		List<Flight> flights = new LinkedList<Flight>();
-		BufferedReader br = new BufferedReader(new FileReader("src/at/jku/ce/airline/test/flightPlanCSV.csv"));
+		BufferedReader br = new BufferedReader(new FileReader("SevenAirline/src/at/jku/ce/airline/test/flightPlanCSV.csv"));
 		br.readLine();//skip head
 		String[] line;
 		String sLine;
