@@ -3,6 +3,7 @@ package at.jku.ce.airline.test;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class DB {
 	
 	private static DB instance = null;
 	
-	public static List<Flight> getFlights() {
+	public  List<Flight> getFlights() {
 		return flights;
 	}
 
@@ -41,7 +42,7 @@ public class DB {
 	
 	private List<Flight> createFlights() throws Exception {
 		List<Flight> flights = new LinkedList<Flight>();
-		BufferedReader br = new BufferedReader(new FileReader("SevenAirline/src/at/jku/ce/airline/test/flightPlanCSV.csv"));
+		BufferedReader br = new BufferedReader(new FileReader("src/at/jku/ce/airline/test/flightPlanCSV.csv"));
 		br.readLine();//skip head
 		String[] line;
 		String sLine;
@@ -57,12 +58,12 @@ public class DB {
 			flight.setDepartureTime(timeD);
 			flight.setArrivesAt(getAirportByCountry(line[6]));
 			timeA = new Time();
-			timeA.setIndexDayOfWeek(Day.valueOf(line[0]).ordinal());
+			timeA.setIndexDayOfWeek(Day.valueOf(line[0]).ordinal()+1);
 			timeA.setTimeOfDay(Long.parseLong(line[5]));
 			flight.setArrivalTime(timeA);
 			flight.setPlaneName(line[2]);
 			flight.setFlightId(line[1]);
-			flight.setStdFee(new BigDecimal((flight.getArrivalTime().getTimeOfDay()-flight.getDepartureTime().getTimeOfDay())*0.07));
+			flight.setStdFee(new BigDecimal((flight.getArrivalTime().getTimeOfDay()-flight.getDepartureTime().getTimeOfDay())*0.7).round(new MathContext(2)));
 			flights.add(flight);
 		}
 		br.close();
@@ -75,6 +76,7 @@ public class DB {
 			}
 		}
 		throw new Exception("Airport not found: "+name);
+		
 	}
 	private static List<Airport> createAirports(){
 		List<Airport> airports = new LinkedList<Airport>();
@@ -83,7 +85,7 @@ public class DB {
     	spanien.setCountry("Spanien");
     	spanien.setIcao("LEBL");
     	spanien.setName("Flughafen Barcelona");
-    	spanien.setAirportTax(new BigDecimal(452.1));
+    	spanien.setAirportTax(new BigDecimal(452.1).round(new MathContext(2)));
     	airports.add(spanien);
 
     	Airport frankreich = new Airport();
@@ -91,7 +93,7 @@ public class DB {
     	frankreich.setCountry("Frankreich");
     	frankreich.setIcao("LFPG");
     	frankreich.setName("Flughafen Paris-Charles de Gaulle");
-    	frankreich.setAirportTax(new BigDecimal(716.1));
+    	frankreich.setAirportTax(new BigDecimal(716.1).round(new MathContext(2)));
     	airports.add(frankreich);
     	
     	Airport uk = new Airport();
@@ -99,7 +101,7 @@ public class DB {
     	uk.setCountry("Vereintes Königreich");
     	uk.setIcao("EGKK");
     	uk.setName("Flughafen London-Heathrow");
-    	uk.setAirportTax(new BigDecimal(442.4));
+    	uk.setAirportTax(new BigDecimal(442.4).round(new MathContext(2)));
     	airports.add(uk);
     	
     	Airport irland = new Airport();
@@ -107,7 +109,7 @@ public class DB {
     	irland.setCountry("Irland");
     	irland.setIcao("EIDW");
     	irland.setName("Flughafen Irland");
-    	irland.setAirportTax(new BigDecimal(290.9));
+    	irland.setAirportTax(new BigDecimal(290.9).round(new MathContext(2)));
     	airports.add(irland);
     	
     	Airport belgien = new Airport();
@@ -115,7 +117,7 @@ public class DB {
     	belgien.setCountry("Belgien");
     	belgien.setIcao("EBBR");
     	belgien.setName("Flughafen Brüssel-Zaventem");
-    	belgien.setAirportTax(new BigDecimal(289.7));
+    	belgien.setAirportTax(new BigDecimal(289.7).round(new MathContext(2)));
     	airports.add(belgien);
     	
     	Airport nl = new Airport();
@@ -123,7 +125,7 @@ public class DB {
     	nl.setCountry("Niederlande");
     	nl.setIcao("EHAM");
     	nl.setName("Amsterdam – Schiphol");
-    	nl.setAirportTax(new BigDecimal(610.4));
+    	nl.setAirportTax(new BigDecimal(610.4).round(new MathContext(2)));
     	airports.add(nl);
     	
     	Airport portugal = new Airport();
@@ -131,7 +133,7 @@ public class DB {
     	portugal.setCountry("Portugal");
     	portugal.setIcao("LPPT");
     	portugal.setName("Flughafen Lissabon");
-    	portugal.setAirportTax(new BigDecimal(253.0));
+    	portugal.setAirportTax(new BigDecimal(253.0).round(new MathContext(2)));
     	airports.add(portugal);
     	
     	Airport luxemburg = new Airport();
@@ -139,7 +141,7 @@ public class DB {
     	luxemburg.setCountry("Luxemburg");
     	luxemburg.setIcao("ELLX");
     	luxemburg.setName("Flughafen Luxemburg");
-    	luxemburg.setAirportTax(new BigDecimal(119.2));
+    	luxemburg.setAirportTax(new BigDecimal(119.2).round(new MathContext(2)));
     	airports.add(luxemburg);
     	
     	Airport island = new Airport();
@@ -147,7 +149,7 @@ public class DB {
     	island.setCountry("Island");
     	island.setIcao("BIKF");
     	island.setName("Leifur Eriksson");
-    	island.setAirportTax(new BigDecimal(123.8));
+    	island.setAirportTax(new BigDecimal(123.8).round(new MathContext(2)));
     	airports.add(island);
     	
     	Airport schweiz = new Airport();
@@ -155,7 +157,7 @@ public class DB {
     	schweiz.setCountry("Schweiz");
     	schweiz.setIcao("LSZH");
     	schweiz.setName("Flughafen Zürich");
-    	schweiz.setAirportTax(new BigDecimal(348.0));
+    	schweiz.setAirportTax(new BigDecimal(348.0).round(new MathContext(2)));
     	airports.add(schweiz);
     	
     	Airport italien = new Airport();
@@ -163,7 +165,7 @@ public class DB {
     	italien.setCountry("Italien");
     	italien.setIcao("LIRF");
     	italien.setName("Flughafen Rom-Fiumicino");
-    	italien.setAirportTax(new BigDecimal(469.8));
+    	italien.setAirportTax(new BigDecimal(469.8).round(new MathContext(2)));
     	airports.add(italien);
     	
     	Airport deutschland = new Airport();
@@ -171,7 +173,7 @@ public class DB {
     	deutschland.setCountry("Deutschland");
     	deutschland.setIcao("EDDF");
     	deutschland.setName("Frankfurt am Main");
-    	deutschland.setAirportTax(new BigDecimal(680.36));
+    	deutschland.setAirportTax(new BigDecimal(680.36).round(new MathContext(2)));
     	airports.add(deutschland);
     	
     	Airport dm = new Airport();
@@ -179,10 +181,12 @@ public class DB {
     	dm.setCountry("Dänemark");
     	dm.setIcao("EKCH");
     	dm.setName("Kastrup Airport");
-    	dm.setAirportTax(new BigDecimal(333.4));
+    	dm.setAirportTax(new BigDecimal(333.4).round(new MathContext(2)));
     	airports.add(dm);
     	return airports;
 	}
+	
+
 	
 	@Override
 	public String toString(){

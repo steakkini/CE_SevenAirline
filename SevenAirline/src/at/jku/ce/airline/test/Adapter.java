@@ -10,7 +10,7 @@ public class Adapter {
 	
 	private Adapter(){
 		airline = new Airline();
-		airline.setName("SEVEN");
+		airline.setName("O2Airline");
 		setStats();
 	}
 	
