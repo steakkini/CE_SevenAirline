@@ -1,16 +1,16 @@
 Tag,FlugNr,Typ,Zeit,von,Zeit,nach
-MONTAG,f101,Flying Charlie 1,600,Spanien,705,Frankreich
-MONTAG,f102,Flying Charlie 1,810,Frankreich,835,Vereintes Königreich
-MONTAG,f103,Flying Charlie 1,940,Vereintes Königreich,1020,Irland
+MONTAG,f101,Flying Charlie 1,600,Spanien,720,Frankreich
+MONTAG,f102,Flying Charlie 1,820,Frankreich,845,Vereintes Königreich
+MONTAG,f103,Flying Charlie 1,945,Vereintes Königreich,1025,Irland
 MONTAG,f104,Flying Charlie 1,1125,Irland,1225,Belgien
 MONTAG,f105,Flying Charlie 1,1330,Belgien,1345,Niederlande
 MONTAG,f106,Flying Charlie 1,1700,Niederlande,1730,Frankreich
-MONTAG,f107,Flying Charlie 1,1830,Frankreich,1935,Spanien
-MONTAG,f108,Flying Charlie 1,2045,Spanien,2200,Portugal
-DIENSTAG,f109,Flying Charlie 1,630,Portugal,745,Spanien
-DIENSTAG,f110,Flying Charlie 1,900,Spanien,1015,Portugal
-DIENSTAG,f111,Flying Charlie 1,1120,Portugal,1235,Spanien
-DIENSTAG,f112,Flying Charlie 1,1350,Spanien,1505,Luxemburg
+MONTAG,f107,Flying Charlie 1,1830,Frankreich,1950,Spanien
+MONTAG,f108,Flying Charlie 1,2050,Spanien,2130,Portugal
+DIENSTAG,f109,Flying Charlie 1,630,Portugal,710,Spanien
+DIENSTAG,f110,Flying Charlie 1,830,Spanien,910,Portugal
+DIENSTAG,f111,Flying Charlie 1,1100,Portugal,1140,Spanien
+DIENSTAG,f112,Flying Charlie 1,1330,Spanien,1505,Luxemburg
 DIENSTAG,f113,Flying Charlie 1,1700,Luxemburg,1725,Niederlande
 DIENSTAG,f114,Flying Charlie 1,1845,Niederlande,1940,Irland
 DIENSTAG,f115,Flying Charlie 1,2050,Irland,2130,Vereintes Königreich
@@ -24,10 +24,10 @@ MITTWOCH,f122,Flying Charlie 1,1650,Frankreich,1710,Belgien
 MITTWOCH,f123,Flying Charlie 1,1830,Belgien,1900,Vereintes Königreich
 MITTWOCH,f124,Flying Charlie 1,2000,Vereintes Königreich,2100,Schweiz
 DONNERSTAG,f125,Flying Charlie 1,600,Schweiz,640,Frankreich
-DONNERSTAG,f126,Flying Charlie 1,740,Frankreich,845,Spanien
-DONNERSTAG,f127,Flying Charlie 1,100,Spanien,1115,Portugal
-DONNERSTAG,f128,Flying Charlie 1,1215,Portugal,1330,Spanien
-DONNERSTAG,f129,Flying Charlie 1,1430,Spanien,1550,Italien
+DONNERSTAG,f126,Flying Charlie 1,740,Frankreich,900,Spanien
+DONNERSTAG,f127,Flying Charlie 1,1000,Spanien,1040,Portugal
+DONNERSTAG,f128,Flying Charlie 1,1205,Portugal,1245,Spanien
+DONNERSTAG,f129,Flying Charlie 1,1410,Spanien,1550,Italien
 DONNERSTAG,f130,Flying Charlie 1,1650,Italien,1800,Deutschland
 DONNERSTAG,f131,Flying Charlie 1,1900,Deutschland,1950,Vereintes Königreich
 DONNERSTAG,f132,Flying Charlie 1,2050,Vereintes Königreich,2130,Irland
@@ -39,7 +39,7 @@ FREITAG,f137,Flying Charlie 1,1505,Belgien,1535,Vereintes Königreich
 FREITAG,f138,Flying Charlie 1,1645,Vereintes Königreich,1910,Island
 FREITAG,f139,Flying Charlie 1,2010,Island,2200,Irland
 SAMSTAG,f140,Flying Charlie 1,600,Irland,750,Spanien
-SAMSTAG,f141,Flying Charlie 1,850,Spanien,1005,Portugal
+SAMSTAG,f141,Flying Charlie 1,850,Spanien,930,Portugal
 SAMSTAG,f142,Flying Charlie 1,1110,Portugal,1300,Frankreich
 SAMSTAG,f143,Flying Charlie 1,1400,Frankreich,1420,Belgien
 SAMSTAG,f144,Flying Charlie 1,1520,Belgien,1725,Portugal
@@ -73,8 +73,8 @@ DONNERSTAG,f219,Fyling Charlie 2,600,Vereintes Königreich,825,Island
 DONNERSTAG,f220,Fyling Charlie 2,930,Island,1155,Vereintes Königreich
 DONNERSTAG,f221,Fyling Charlie 2,1300,Vereintes Königreich,1415,Dänemark
 DONNERSTAG,f222,Fyling Charlie 2,1515,Dänemark,1630,Vereintes Königreich
-DONNERSTAG,f223,Fyling Charlie 2,1740,Vereintes Königreich,1905,Spanien
-DONNERSTAG,f224,Fyling Charlie 2,2010,Spanien,2130,Belgien
+DONNERSTAG,f223,Fyling Charlie 2,1740,Vereintes Königreich,1915,Spanien
+DONNERSTAG,f224,Fyling Charlie 2,2015,Spanien,2155,Belgien
 FREITAG,f225,Fyling Charlie 2,600,Belgien,805,Portugal
 FREITAG,f226,Fyling Charlie 2,905,Portugal,1120,Italien
 FREITAG,f227,Fyling Charlie 2,1230,Italien,1445,Portugal
@@ -86,12 +86,12 @@ SAMSTAG,f232,Fyling Charlie 2,1230,Italien,1405,Niederlande
 SAMSTAG,f233,Fyling Charlie 2,1510,Niederlande,1540,Deutschland
 SAMSTAG,f234,Fyling Charlie 2,1700,Deutschland,1750,Vereintes Königreich
 SAMSTAG,f235,Fyling Charlie 2,1900,Vereintes Königreich,1930,Niederlande
-SAMSTAG,f236,Flying Charlie 2,2030,Niederlande,2200,Spanien
-SONNTAG,f237,Flying Charlie 2,600,Spanien,720,Belgien
+SAMSTAG,f236,Flying Charlie 2,2030,Niederlande,2055,Luxemburg
+SONNTAG,f237,Flying Charlie 2,600,Luxemburg,615,Belgien
 SONNTAG,f238,Flying Charlie 2,820,Belgien,920,Dänemark
 SONNTAG,f239,Flying Charlie 2,1025,Dänemark,1125,Belgien
 SONNTAG,f240,Flying Charlie 2,1225,Belgien,1250,Vereintes Königreich
-SONNTAG,f241,Flying Charlie 2,1355,Vereintes Königreich,1520,Spanien
+SONNTAG,f241,Flying Charlie 2,1355,Vereintes Königreich,1525,Spanien
 SONNTAG,f242,Flying Charlie 2,1720,Spanien,1910,Irland
 SONNTAG,f243,Flying Charlie 2,2010,Irland,2200,Island
 MONTAG,f301,Flying Charlie 3,600,Irland,750,Island
@@ -109,38 +109,37 @@ DIENSTAG,f312,Flying Charlie 3,1400,Portugal,1555,Vereintes Königreich
 DIENSTAG,f313,Flying Charlie 3,1700,Vereintes Königreich,1725,Frankreich
 DIENSTAG,f314,Flying Charlie 3,1830,Frankreich,1935,Spanien
 DIENSTAG,f315,Flying Charlie 3,2040,Spanien,2200,Belgien
-MITTWOCH,f316,Flying Charlie 3,600,Belgien,720,Spanien
-MITTWOCH,f317,Flying Charlie 3,820,Spanien,935,Portugal
-MITTWOCH,f318,Flying Charlie 3,1040,Portugal,1155,Spanien
-MITTWOCH,f319,Flying Charlie 3,1300,Spanien,1430,Niederlande
+MITTWOCH,f316,Flying Charlie 3,600,Belgien,740,Spanien
+MITTWOCH,f317,Flying Charlie 3,840,Spanien,920,Portugal
+MITTWOCH,f318,Flying Charlie 3,1040,Portugal,1120,Spanien
+MITTWOCH,f319,Flying Charlie 3,1240,Spanien,1430,Niederlande
 MITTWOCH,f320,Flying Charlie 3,1530,Niederlande,1600,Vereintes Königreich
 MITTWOCH,f321,Flying Charlie 3,1700,Vereintes Königreich,1725,Frankreich
 MITTWOCH,f322,Flying Charlie 3,1830,Frankreich,1855,Vereintes Königreich
 MITTWOCH,f323,Flying Charlie 3,2000,Vereintes Königreich,2145,Italien
 DONNERSTAG,f324,Flying Charlie 3,600,Italien,735,Niederlande
-DONNERSTAG,f325,Flying Charlie 3,835,Niederlande,1005,Spanien
-DONNERSTAG,f326,Flying Charlie 3,1105,Spanien,1230,Vereintes Königreich
-DONNERSTAG,f327,Flying Charlie 3,1330,Vereintes Königreich,1555,Island
-DONNERSTAG,f328,Flying Charlie 3,1700,Island,1850,Irland
-DONNERSTAG,f329,Flying Charlie 3,2000,Irland,2150,Island
-FREITAG,f330,Flying Charlie 3,600,Island,825,Vereintes Königreich
-FREITAG,f331,Flying Charlie 3,930,Vereintes Königreich,1055,Spanien
-FREITAG,f332,Flying Charlie 3,1200,Spanien,1315,Portugal
-FREITAG,f333,Flying Charlie 3,1415,Portugal,1530,Spanien
-FREITAG,f334,Flying Charlie 3,1630,Spanien,1750,Belgien
-FREITAG,f335,Flying Charlie 3,1900,Belgien,2000,Dänemark
-FREITAG,f336,Flying Charlie 3,2100,Dänemark,2150,Niederlande
-SAMSTAG,f337,Flying Charlie 3,600,Niederlande,655,Spanien
-SAMSTAG,f338,Flying Charlie 3,800,Spanien,920,Italien
-SAMSTAG,f339,Flying Charlie 3,1020,Italien,1235,Portugal
-SAMSTAG,f340,Flying Charlie 3,1340,Portugal,1455,Spanien
-SAMSTAG,f341,Flying Charlie 3,1600,Spanien,1725,Vereintes Königreich
-SAMSTAG,f342,Flying Charlie 3,1825,Vereintes Königreich,1905,Irland
-SAMSTAG,f343,Flying Charlie 3,2005,Irland,2155,Island
-SONNTAG,f344,Flying Charlie 3,600,Island,825,Vereintes Königreich
-SONNTAG,f345,Flying Charlie 3,930,Vereintes Königreich,1000,Niederlande
-SONNTAG,f346,Flying Charlie 3,1100,Niederlande,1230,Spanien
-SONNTAG,f347,Flying Charlie 3,1330,Spanien,1455,Vereintes Königreich
-SONNTAG,f348,Flying Charlie 3,1600,Vereintes Königreich,1650,Deutschland
-SONNTAG,f349,Flying Charlie 3,1750,Deutschland,1840,Vereintes Königreich
-SONNTAG,f350,Flying Charlie 3,1940,Vereintes Königreich,2020,Irland
+DONNERSTAG,f325,Flying Charlie 3,835,Niederlande,1025,Spanien
+DONNERSTAG,f326,Flying Charlie 3,1125,Spanien,1255,Vereintes Königreich
+DONNERSTAG,f327,Flying Charlie 3,1355,Vereintes Königreich,1620,Island
+DONNERSTAG,f328,Flying Charlie 3,1720,Island,1910,Irland
+DONNERSTAG,f329,Flying Charlie 3,2010,Irland,2050,Vereintes Königreich
+FREITAG,f330,Flying Charlie 3,925,Vereintes Königreich,1055,Spanien
+FREITAG,f331,Flying Charlie 3,1200,Spanien,1240,Portugal
+FREITAG,f332,Flying Charlie 3,1400,Portugal,1440,Spanien
+FREITAG,f333,Flying Charlie 3,1610,Spanien,1750,Belgien
+FREITAG,f334,Flying Charlie 3,1900,Belgien,2000,Dänemark
+FREITAG,f335,Flying Charlie 3,2100,Dänemark,2150,Niederlande
+SAMSTAG,f336,Flying Charlie 3,600,Niederlande,650,Spanien
+SAMSTAG,f337,Flying Charlie 3,800,Spanien,840,Italien
+SAMSTAG,f338,Flying Charlie 3,1020,Italien,1235,Portugal
+SAMSTAG,f339,Flying Charlie 3,1340,Portugal,1420,Spanien
+SAMSTAG,f340,Flying Charlie 3,1555,Spanien,1725,Vereintes Königreich
+SAMSTAG,f341,Flying Charlie 3,1825,Vereintes Königreich,1905,Irland
+SAMSTAG,f342,Flying Charlie 3,2005,Irland,2155,Island
+SONNTAG,f343,Flying Charlie 3,600,Island,825,Vereintes Königreich
+SONNTAG,f344,Flying Charlie 3,930,Vereintes Königreich,1000,Niederlande
+SONNTAG,f345,Flying Charlie 3,1100,Niederlande,1250,Spanien
+SONNTAG,f346,Flying Charlie 3,1350,Spanien,1520,Vereintes Königreich
+SONNTAG,f347,Flying Charlie 3,1620,Vereintes Königreich,1710,Deutschland
+SONNTAG,f348,Flying Charlie 3,1810,Deutschland,1900,Vereintes Königreich
+SONNTAG,f349,Flying Charlie 3,2000,Vereintes Königreich,2040,Irland
