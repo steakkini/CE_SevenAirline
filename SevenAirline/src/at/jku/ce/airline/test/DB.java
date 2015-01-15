@@ -81,11 +81,11 @@ public class DB {
 	private static List<Airport> createAirports(){
 		List<Airport> airports = new LinkedList<Airport>();
     	Airport spanien = new Airport();
-    	spanien.setCity("Barcelona");
+    	spanien.setCity("Madrid");
     	spanien.setCountry("Spanien");
-    	spanien.setIcao("LEBL");
-    	spanien.setName("Flughafen Barcelona");
-    	spanien.setAirportTax(new BigDecimal(452.1).round(new MathContext(2)));
+    	spanien.setIcao("LEMD");
+    	spanien.setName("Flughafen Madrid-Barajas");
+    	spanien.setAirportTax(new BigDecimal(552.1).round(new MathContext(2)));
     	airports.add(spanien);
 
     	Airport frankreich = new Airport();
